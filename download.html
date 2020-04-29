@@ -1,0 +1,130 @@
+
+<DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>Elastic Progress | Codrops</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<style>
+body.cda-noimg #cdawrap {
+	--cda-width: 280px;
+	--cda-left: auto;
+	--cda-right: 3rem;
+	--cda-top: 2rem;
+	--cda-bottom: auto;
+	--cda-background: transparent;
+	position: absolute;
+	padding: 0;
+	--cda-border-width: 0;
+	--cda-text-color: #444;
+	z-index: 0;
+	font-family: inherit;
+	font-size: inherit;
+	--cda-text-weight: 400;
+	--cda-sp-color: #666;
+	--cda-remove-color: #666;
+}
+</style>
+
+	</head>
+	<body class="cda-noimg cda-alignright">
+		<div class="container">
+			<header class="codrops-header">
+				<div class="codrops-links">
+					<a class="codrops-icon codrops-icon--prev" href="https://innadanylevska.github.io/" title="Back"><span>Back</span></a>
+					<a class="codrops-icon codrops-icon--drop" href="https://innadanylevska.github.io/download2" title="Download Next Project"><span>Download Next Project</span></a>
+				</div>
+				<h1>Tested Project #1 <span>Based on the <a href="#">GLOICE</a> by <a href="#">Talant People</a></span></h1>
+			</header>
+			
+			<div class="content">
+				<div class="row">
+					<div class="box box--centered">
+						<div role="button" tabindex="0" aria-label="Download" class="Download" data-progressbar-label="Downloading item..."></div> <br>
+					</div>
+					<div class="box">
+						<pre><code>
+element.ElasticProgress({
+	align: "center",
+	colorFg: "#686e85",
+	colorBg: "#b4bad2",
+	highlightColor: "#ffab91",
+	width: Math.min($(window).width()/2 - 100, 600),
+	barHeight: 10,
+	labelHeight: 50,
+	labelWobbliness: 0,
+	bleedTop: 120,
+	bleedRight: 100,
+	buttonSize: 60,
+	fontFamily: "Arvo",
+	barStretch: 0,
+	barInset: 4,
+	barElasticOvershoot: 1,
+	barElasticPeriod: 0.6,
+	textFail: "Download Failed",
+	textComplete: "Download Complete",
+	arrowHangOnFail: false,
+	onClick: function() {
+			$(this).ElasticProgress("open");
+	},
+	onOpen: function() {
+			fakeLoading($(this))
+	},
+	onComplete: function() {
+			var $obj = $(this)
+
+			TweenMax.delayedCall(1.5, function() {
+					$obj.ElasticProgress("close");
+			})
+	}
+});
+						</code></pre>
+					</div>
+				</div>
+			
+			<!--section class="content content--related">
+				<p>If you enjoyed this demo you might also like:</p>
+				<a class="media-item" href="http://tympanus.net/Tutorials/CircularProgressButton/">
+					<img class="media-item__img" src="img/related/AnimatedProgressButton.jpg">
+					<h3 class="media-item__title">Circular Progress Button</h3>
+				</a>
+				<a class="media-item" href="http://tympanus.net/Development/ProgressButtonStyles/">
+					<img class="media-item__img" src="img/related/ProgressButtonStyles.jpg">
+					<h3 class="media-item__title">Progress Button Styles</h3>
+				</a>
+			</section-->
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<script src="js/elastic-progress.js"></script>
+		<script src="js/main.js"></script>
+		
+   
+<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+
+	</body>
+</html-->
