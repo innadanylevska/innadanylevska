@@ -42,7 +42,7 @@ body {
     --color-bg: #d02d55;
     --color-link: #ffffff;
     --color-link-hover: #000000;
-    --color-title: #320065;
+    /*--color-title: #320065;*/
     --filter-img: sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg);
 }
 
